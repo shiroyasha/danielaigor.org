@@ -44,3 +44,7 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+activate :blog do |blog|
+  # set options on blog
+end
