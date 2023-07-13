@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=IBM+Plex+Serif&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  font-family: "Alex Brush", cursive;
-  font-family: "IBM Plex Serif", serif;
-
-  font-size: 18px;
+  font-family: "Lusitana", serif;
 }
 
 h1 {
@@ -27,6 +26,8 @@ h1 {
   padding-top: 20px;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  font-family: "Source Serif 4", serif;
+  font-weight: 400;
 }
 
 .logo {
@@ -35,6 +36,7 @@ h1 {
 
 .fancy {
   font-family: "Alex Brush", cursive;
+  font-weight: 900;
 }
 
 .footer {
@@ -45,4 +47,30 @@ h1 {
   display: flex;
   align-items: center;
   gap: 3px;
+}
+
+.article {
+  @apply text-lg;
+}
+
+.article h1 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+}
+
+.article h2 {
+  font-family: "Source Serif 4", serif;
+  font-weight: 900;
+  @apply mb-2;
+  @apply mt-8;
+  @apply text-2xl;
+}
+
+.article p {
+  @apply mb-4;
+}
+
+.article ul {
+  @apply pl-4;
+  list-style: disc;
 }

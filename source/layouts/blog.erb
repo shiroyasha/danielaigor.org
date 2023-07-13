@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title %> &middot; Daniela &amp; Igor</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lusitana:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,900&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="logo">
+        <span>Daniela</span> <span class="fancy -mx-1 -mr-1.5 text-rose-500">&amp;</span> <span>Igor</span>
+      </h1>
+    </div>
+
+    <div class="max-w-2xl mx-auto px-4 mt-8 mb-32">
+      <div class="article">
+        <div class="my-4">
+          <h1 class="text-4xl font-extrabold mb-4 mt-8"><%= current_page.data.title %></h1>
+
+          <div class="-mx-8">
+            <% if current_page.data.image %>
+              <img src="<%= current_page.data.image %>">
+            <% end %>
+          </div>
+
+          <div class="mb-4 font-sans text-xs uppercase border-b border-gray-300 py-2 mt-4">
+            Written by <%= current_page.data.author %> &mdash; <%= current_page.date.strftime("%A, %B %-d, %Y") %> 
+          </div>
+        </div>
+
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
