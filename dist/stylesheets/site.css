@@ -633,8 +633,20 @@ video {
   max-width: 42rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-8 {
@@ -679,6 +691,11 @@ video {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -706,7 +723,7 @@ video {
 }
 
 body {
-  font-family: "Lusitana", serif;
+  font-family: "Merriweather", serif;
 }
 
 h1 {
@@ -753,12 +770,11 @@ h1 {
 }
 
 .article {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .article h1 {
-  font-family: "Source Serif 4", serif;
   font-weight: 900;
 }
 

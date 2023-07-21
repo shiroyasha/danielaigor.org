@@ -8,13 +8,15 @@ title: Daniela & Igor
   </h1>
 </div>
 
-<div class="my-16">
-  <% blog.articles[0...5].each do |article| %>
+<div class="my-16 flex flex-col gap-4">
+  <% blog.articles[0...5].each.with_index do |article, index| %>
     <article class="flex items-center gap-8">
       <img class="w-96 block" src="<%= article.data.image %>" />
 
       <div>
-        <div class="uppercase font-extrabold font-sans">Latest</div>
+        <% if index == 0 %>
+          <div class="uppercase font-extrabold font-sans">Latest</div>
+        <% end %>
         <a class="my-4 block text-5xl hover:underline" href="<%= article.url %>"><%= article.title %></a>
       </div>
     </article>

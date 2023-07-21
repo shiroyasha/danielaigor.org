@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Lusitana", serif;
+  font-family: "Merriweather", serif;
 }
 
 h1 {
@@ -50,11 +50,11 @@ h1 {
 }
 
 .article {
-  @apply text-lg;
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 .article h1 {
-  font-family: "Source Serif 4", serif;
   font-weight: 900;
 }
 
