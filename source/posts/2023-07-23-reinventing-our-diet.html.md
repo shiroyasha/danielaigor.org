@@ -1,7 +1,7 @@
 ---
 author: "Igor Šarčević"
-title: "Reinventing our diet: The ethics and health benefits of switching to a vegeterianism"
-image: "/images/unpaid-labor.png"
+title: "Reinventing our diet: The ethics and health benefits of switching to vegeterianism"
+image: "/images/plant-based-dinner.png"
 ---
 
 Innovation isn't just about creating cutting-edge technology, it is also about
@@ -120,7 +120,7 @@ The ripple effects of such decisions should not be underestimated. The more peop
 who adopt a vegiterian diet, even partially, the greater the the reduction in the demand
 for animale-based products.
 
-## (mostly) Vegeterians for more than a year
+## Mostly Vegeterians for more than a year
 
 I was personally an on-and-off vegeterian in the last ten years. I had years where I
 didn't even touch any meat, and years where I was consuming meat on a regular basis.
