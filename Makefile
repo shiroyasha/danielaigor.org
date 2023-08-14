@@ -1,5 +1,8 @@
 .PHONY: build
 
+setup:
+	bundle install
+
 build:
 	mv docs/CNAME /tmp/CNAME
 	rm -rf build
