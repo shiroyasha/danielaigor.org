@@ -11,7 +11,7 @@ title: Daniela & Igor
 
   <div class="flex flex-col gap-4 md:pl-4">
     <div class="hidden md:block font-sans font-bold uppercase">LATEST</div>
-    <div class="text md:text-5xl font-extrabold block group-hover:underline"><%= latest.title %></div>
+    <div class="text md:text-4xl font-extrabold block group-hover:underline"><%= latest.title %></div>
     <div class="hidden md:flex md:visible font-sans mt-4">
       By <%= latest.data.author %>
       <div class="border-l mx-3 border-gray-950 my-1"></div>
@@ -20,7 +20,7 @@ title: Daniela & Igor
   </div>
 </a>
 
-<div class="my-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="my-4 grid grid-cols-1 md:grid-cols-4 gap-4">
   <% blog.articles[1...5].each.with_index do |article, index| %>
     <a class="flex flex-col items-center gap-2 shrink-0 group cursor-pointer" href="<%= article.url %>">
       <img class="block" src="<%= article.data.image %>" />
@@ -55,5 +55,3 @@ title: Daniela & Igor
     </a>
   </div>
 </div>
-
-
